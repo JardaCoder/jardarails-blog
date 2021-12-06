@@ -1,9 +1,9 @@
-<h1>Hello world </h1>
+<h1>Oi mãe</h1>
 
 <ul>
     <% @articles.each do | article | %>
         <li>
-            <%= article.title %> bonitão criado em <%= article.created_at%>
+            <%= link_to article.title, article %> bonitão criado em <%= article.created_at%>
         </li>
     <%end%>    
 </ul>
